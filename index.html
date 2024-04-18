@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <title>hw6</title>
+  <title>hw7</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -24,13 +24,13 @@
 
       <nav class="page-header__nav ">
         <ul class="nav-sait">
-          <li><a class="nav-sait__link current" href="./index.html">Студія</a></li>
+          <li><a class="nav-sait__link nav-sait__link--current" href="./index.html">Студія</a></li>
           <li><a class="nav-sait__link" href="./portfolio.html">Портфоліо</a></li>
           <li><a class="nav-sait__link" href="#contact">Контакти</a></li>
         </ul>
       </nav>
 
-      <ul class="page-header__contact">
+      <ul class="contact">
         <li>
           <a class="contact__link" href="mailto:info@devstudio.com">
             <svg class="contact__icon" width="16" height="12">
@@ -378,7 +378,7 @@
         <a class="logo footer__logo" href="./index.html"><span class="logo__blue">Web</span>Studio</a>
 
         <!-- fotter address -->
-        <address class="footer__address" id="contact">
+        <address class="address" id="contact">
 
           <ul class="address__list">
             <li class="address__item">
@@ -400,7 +400,7 @@
       </div>
 
       <!-- fotter networks -->
-      <div class="fotter__social">
+      <div class="social">
         <h3 class="social__title">приєднуйтесь</h3>
         <ul class="networks">
           <li class="networks__item">
@@ -446,7 +446,7 @@
             <input class="subscription__input" type="email" name="email" placeholder=" " autocomplete="email" required>
             <span class="subscription-text">E-mail</span>
           </label>
-          <button type="submit" class="button__subscription button button--primary">Підписатися
+          <button type="submit" class="subscription__button button button--primary">Підписатися
             <svg class="subscribe__icon" width="24" height="24">
               <use href="./svg/sprite.svg#subscribe"></use>
             </svg>
@@ -465,47 +465,46 @@
           <use href="./svg/sprite.svg#close"></use>
         </svg>
       </button>
+      <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
 
-      <form class="modal__form js-speaker-form" autocomplete="on">
+      <form class="form js-speaker-form" autocomplete="on">
 
-        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
-
-        <div class="modal__wrap">
-          <label class="modal__label" for="modalName">Ім'я
-            <div class="modal__auxiliary">
-              <input class="modal__input" name="modalName" id="modalName" type="text" required autofocus>
-              <svg class="modal__icon" width="18" height="18">
+        <div class="form__wrap">
+          <label class="form__label" for="modalName">Ім'я
+            <div class="form__auxiliary">
+              <input class="form__input" name="modalName" id="modalName" type="text" required autofocus>
+              <svg class="form__icon" width="18" height="18">
                 <use href="./svg/sprite.svg#person"></use>
               </svg>
             </div>
           </label>
         </div>
 
-        <div class="modal__wrap">
-          <label class="modal__label" for="modalTel">Телефон
-            <div class="modal__auxiliary">
-              <input class="modal__input" type="tel" name="modalTel" id="modalTel" required>
-              <svg class="modal__icon" width="18" height="18">
+        <div class="form__wrap">
+          <label class="form__label" for="modalTel">Телефон
+            <div class="form__auxiliary">
+              <input class="form__input" type="tel" name="modalTel" id="modalTel" required>
+              <svg class="form__icon" width="18" height="18">
                 <use href="./svg/sprite.svg#phone"></use>
               </svg>
             </div>
           </label>
         </div>
 
-        <div class="modal__wrap">
-          <label class="modal__label" for="modalEmail">Пошта
-            <div class="modal__auxiliary">
-              <input class="modal__input" type="email" name="modalEmail" id="modalEmail" required>
-              <svg class="modal__icon" width="18" height="18">
+        <div class="form__wrap">
+          <label class="form__label" for="modalEmail">Пошта
+            <div class="form__auxiliary">
+              <input class="form__input" type="email" name="modalEmail" id="modalEmail" required>
+              <svg class="form__icon" width="18" height="18">
                 <use href="./svg/sprite.svg#email"></use>
               </svg>
             </div>
           </label>
         </div>
 
-        <div class="modal__wrap modal__comment">
-          <label class="modal__label" for="modalComment">Коментар
-            <textarea class="modal__input modal__textarea" name="comment" id="modalComment" rows="8"
+        <div class="form__wrap form__comment">
+          <label class="form__label" for="modalComment">Коментар
+            <textarea class="form__input form__textarea" name="comment" id="modalComment" rows="8"
               placeholder="Введіть текст"></textarea>
           </label>
         </div>
@@ -522,7 +521,7 @@
           </label>
         </div>
 
-        <button class="modal__button button button--primary" type="submit">Відправити</button>
+        <button class="form__button button button--primary" type="submit">Відправити</button>
 
       </form>
     </div>

@@ -169,12 +169,6 @@ address {
   align-items: center;
 }
 
-.page-header__contact {
-  display: flex;
-  column-gap: 50px;
-  margin-left: auto;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -204,11 +198,11 @@ address {
 
 .nav-sait__link:hover,
 .nav-sait__link:focus,
-.nav-sait__link.current {
+.nav-sait__link--current {
   color: var(--accent-color);
 }
 
-.nav-sait__link.current::after {
+.nav-sait__link--current::after {
   position: absolute;
   content: '';
   bottom: 0;
@@ -218,6 +212,12 @@ address {
   border-radius: 2px;
   background-color: var(--accent-color);
 
+}
+
+.contact {
+  display: flex;
+  column-gap: 50px;
+  margin-left: auto;
 }
 
 .contact__link {
@@ -453,7 +453,7 @@ address {
   color: var(--primary-whait-color);
 }
 
-.footer__address {
+.address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -552,6 +552,7 @@ address {
 
 .subscription__input:hover+.subscription-text,
 .subscription__input:focus+.subscription-text,
+.subscription-text:hover,
 .subscription__input:not(:placeholder-shown)+.subscription-text {
   transform: translateY(-250%);
 }
@@ -560,7 +561,7 @@ address {
   color: rgba(255, 255, 255, 0.6);
 } */
 
-.button__subscription {
+.subscription__button {
   min-width: 200px;
   padding: 10px 28px;
   margin-left: 12px;
@@ -575,14 +576,12 @@ address {
 
 /* ---------------portfolio filter------------------ */
 
-.filter {
-  padding-bottom: 50px;
-}
 
-.filter__list {
+.filter {
   display: flex;
   column-gap: 8px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter__btn {
@@ -604,7 +603,7 @@ address {
 
 /* --------------portfolio project--------- */
 
-.project__list {
+.project {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -745,13 +744,13 @@ address {
   color: var(--title-text-color);
 }
 
-.modal__wrap {
+.form__wrap {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.modal__label {
+.form__label {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
@@ -759,11 +758,11 @@ address {
   color: var(--primary-text-color);
 }
 
-.modal__auxiliary {
+.form__auxiliary {
   position: relative;
 }
 
-.modal__input {
+.form__input {
   padding: 11px 12px 11px 42px;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -773,18 +772,18 @@ address {
   transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__input:hover,
-.modal__input:focus {
+.form__input:hover,
+.form__input:focus {
   border-color: var(--accent-color);
 }
 
-.modal__input:hover+.modal__icon,
-.modal__input:focus+.modal__icon,
-.modal__icon:hover {
+.form__input:hover+.form__icon,
+.form__input:focus+.form__icon,
+.form__icon:hover {
   color: var(--accent-color);
 }
 
-.modal__icon {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -792,11 +791,11 @@ address {
   color: var(--primary-black-color);
 }
 
-.modal__comment {
+.form__comment {
   margin-bottom: 20px;
 }
 
-.modal__textarea {
+.form__textarea {
   width: 100%;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -804,7 +803,7 @@ address {
   resize: none;
 }
 
-.modal__textarea::placeholder {
+.form__textarea::placeholder {
   align-items: center;
   font-weight: 400;
   font-size: 12px;
@@ -858,15 +857,15 @@ address {
   color: var(--accent-color);
 }
 
-.modal__button {
+.form__button {
   display: flex;
   margin: auto;
   padding: 10px 55px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.modal__button:hover,
-.modal__button:focus {
+.form__button:hover,
+.form__button:focus {
   background-color: #188ce8;
   color: #fff;
 }
