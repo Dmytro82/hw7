@@ -10,7 +10,8 @@
     rel="stylesheet">
   <title>hw7</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
 
 <body>
@@ -322,10 +323,10 @@
   <footer class="footer">
     <div class="footer__container container">
 
-      <div class="footer__nav">
+      <div class="footer-address">
         <a class="logo footer__logo" href="./index.html"><span class="logo__blue">Web</span>Studio</a>
 
-        <!-- fotter address -->
+        <!-- footer address -->
         <address class="address" id="contact">
 
           <ul class="address__list">
@@ -347,9 +348,9 @@
         </address>
       </div>
 
-      <!-- fotter networks -->
-      <div class="social">
-        <h3 class="social__title">приєднуйтесь</h3>
+      <!-- footer networks -->
+      <div class="footer-networks">
+        <h3 class="footer-networks__title">приєднуйтесь</h3>
         <ul class="networks">
           <li class="networks__item">
             <a class="networks__link networks__link--fotter" href="https://www.instagram.com/" target="_blank"
@@ -386,16 +387,16 @@
         </ul>
       </div>
 
-      <!-- fotter form -->
-      <div class="subscription">
-        <h3 class="subscription__title">Підпишіться на розсилку</h3>
-        <form class="subscription__form">
-          <label class="subscription__label">
-            <input class="subscription__input" type="email" name="email" placeholder=" " autocomplete="email" required>
-            <span class="subscription-text">E-mail</span>
+      <!-- footer form -->
+      <div class="footer-subscription">
+        <h3 class="footer-subscription__title">Підпишіться на розсилку</h3>
+        <form class="sub-form">
+          <label class="sub-form__label">
+            <input class="sub-form__input" type="email" name="email" placeholder=" " autocomplete="email" required>
+            <span class="sub-form-text">E-mail</span>
           </label>
-          <button type="submit" class="subscription__button button button--primary">Підписатися
-            <svg class="subscribe__icon" width="24" height="24">
+          <button type="submit" class="sub-form__button button button--primary">Підписатися
+            <svg class="sub-form__icon" width="24" height="24">
               <use href="./svg/sprite.svg#subscribe"></use>
             </svg>
           </button>
